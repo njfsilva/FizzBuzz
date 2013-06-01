@@ -30,7 +30,8 @@ namespace FizzBuzz
                 else
                     Console.WriteLine(i);
             }
-            Console.ReadLine(); 
+            //For Pausing the console
+            Console.ReadLine();
         }
     }
 }
