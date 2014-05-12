@@ -7,15 +7,11 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            bool isDiv5 = false;
-            bool isDiv3 = false;
-            bool isBoth = false;
-
-            for (int i = 0; i < 99; i++)
+           for (var i = 0; i < 99; i++)
             {
-                isDiv5 = i % 5 == 0;
-                isDiv3 = i % 3 == 0;
-                isBoth = isDiv5 && isDiv3;
+                var isDiv5 = i % 5 == 0;
+                var isDiv3 = i % 3 == 0;
+                var isBoth = isDiv5 && isDiv3;
 
                 if (isBoth)
                     Console.WriteLine("FizzBuzz");
@@ -26,7 +22,7 @@ namespace FizzBuzz
                 else
                     Console.WriteLine(i);
             }
-            //For Pausing the console
+            //Pausing the console
             Console.ReadLine();
         }
     }
